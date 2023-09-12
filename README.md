@@ -54,6 +54,7 @@ Replace `your_text_file.txt`, `output_image_name.png`, `your_font_path.ttf`, and
 
 You want to capture the detailed listing of files and directories in your current Linux directory using `ls -lh` and convert the output to an image.
 
+
 您希望使用`ls -lh`捕获当前Linux目录中的文件和目录的详细列表，并将输出转换为图像。
 
 ### Commands 命令
@@ -77,6 +78,7 @@ You want to capture the detailed listing of files and directories in your curren
 After executing the above commands, you'll have an image named `listing_output.png` containing the detailed file and directory listing from the `ls -lh` command.
 
 执行上述命令后，您将拥有一个名为`listing_output.png`的图像，其中包含来自`ls -lh`命令的文件和目录的详细列表。
+![listing_output](https://github.com/wangdaming261/txt2imgconverter/assets/142304595/6615efd3-76a8-462f-b3a4-dc002db17da4)
 
 ## 为什么要写此脚本
 有时候巡检，需要在word上把命令执行后的结果截图粘上去。每次都很麻烦，所以就用ChatGPT写了个脚本。
