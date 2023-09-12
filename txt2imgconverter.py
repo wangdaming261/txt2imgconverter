@@ -2,7 +2,9 @@ import os
 import argparse
 from PIL import Image, ImageDraw, ImageFont
 
-def txt_to_image(txt_file, output_prefix, output_extension, font_path="SourceHanSansCN-Normal.otf", font_size=15, custom_width=None, custom_height=None):
+def txt_to_image(txt_file, output_prefix, output_extension, font_path="MapleMono-SC-NF-Regular.ttf", font_size=15, custom_width=None, custom_height=None):
+    print(f"Using font: {font_path}")
+
     try:
         with open(txt_file, 'r', encoding='utf-8') as f:
             lines = f.readlines()
@@ -72,7 +74,7 @@ def main():
     parser = argparse.ArgumentParser(description="Convert txt to image with content awareness.")
     parser.add_argument("-f", "--file", required=True, help="Path to the text file.")
     parser.add_argument("output", nargs="?", default="image.png", help="Output image file name with extension (e.g., image.png).")
-    parser.add_argument("-font", "--font_path", default="SourceHanSansCN-Normal.otf", help="Path to the font file.")
+    parser.add_argument("-font", "--font_path", default="MapleMono-SC-NF-Regular.ttf", help="Path to the font file.")
     parser.add_argument("-size", "--font_size", type=int, default=15, help="Font size.")
     parser.add_argument("--width", type=int, help="Custom width for the image.")
     parser.add_argument("--height", type=int, help="Custom height for the image.")
@@ -91,10 +93,10 @@ def main():
     estimated_count = estimate_image_count(lines, font, args.height if args.height else 1500)
     if estimated_count > 2:
         print(f"Warning: Your text might be split into {estimated_count} images.")
-        proceed = input("Do you wish to proceed? (yes/no): ").strip().lower()
-        if proceed != "yes":
-            print("Aborted by user.")
-            return
+        # proceed = input("Do you wish to proceed? (yes/no): ").strip().lower()
+        # if proceed != "yes":
+        #    print("Aborted by user.")
+        #    return
 
     txt_to_image(args.file, output_prefix, output_extension, args.font_path, args.font_size, args.width, args.height)
 
