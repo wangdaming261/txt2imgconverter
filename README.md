@@ -48,6 +48,16 @@ Replace `your_text_file.txt`, `output_image_name.png`, `your_font_path.ttf`, and
 
 请将`your_text_file.txt`、`output_image_name.png`、`your_font_path.ttf`和`font_size`替换为您的实际值。
 
+## 注意
+
+- 使用等宽字体将得到最佳的可读性效果。
+- 请确保字体文件与此脚本放在同一个文件夹或位置。
+
+### Notes:
+
+- For best readability, it's recommended to use monospaced (fixed-width) fonts.
+- Ensure the font file is placed in the same directory or location as this script.
+
 ## Example 示例
 
 ### Scenario 场景
