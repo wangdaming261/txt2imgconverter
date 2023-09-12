@@ -68,7 +68,7 @@ You want to capture the detailed listing of files and directories in your curren
 
 2. Then, use the `txt2imgconverter.py` script to convert this file to an image:
 
-   然后，使用`Txt2ImgConverter.py`脚本将此文件转换为图像：
+   然后，使用`txt2imgconverter.py`脚本将此文件转换为图像：
 
    ```bash
    python3 txt2imgconverter.py -f listing.txt listing_output.png
