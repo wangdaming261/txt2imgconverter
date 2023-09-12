@@ -3,7 +3,6 @@ import argparse
 from PIL import Image, ImageDraw, ImageFont
 
 def txt_to_image(txt_file, output_prefix, output_extension, font_path="MapleMono-SC-NF-Regular.ttf", font_size=15, custom_width=None, custom_height=None):
-    print(f"Using font: {font_path}")
 
     try:
         with open(txt_file, 'r', encoding='utf-8') as f:
